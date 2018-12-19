@@ -5,25 +5,110 @@
  */
 
 body {
-  padding-top: 54px;
+    padding-top: 60px;
 }
 
 @media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
+    body {
+        padding-top: 56px;
+    }
+}
+
+.contents img {
+    max-width: 100%;
+}
+
+.bg-dark {
+    background-color: #333333 !important;
+    border-bottom: 1px #222 solid;
+}
+
+.mt {
+    padding-top: 10vh;
+}
+
+.navbar {
+    padding: 0;
 }
 
 .carousel-item {
-  height: 65vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    /* height: 56vh;
+  min-height: 300px; */
+    height: 55.7vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
 }
 
 .portfolio-item {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.w-96 {
+    max-width: 96px;
+    width: 96px;
+}
+
+.h-96 {
+    height: 96px;
+    max-height: 96px;
+}
+
+.hunt_logo {
+    height: 50px;
+}
+
+#doc-menu {
+    border-radius: .25rem;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+#doc-menu li {
+    padding: 0;
+    line-height: 40px;
+    padding-left: 15px;
+    border: 0;
+
+}
+#doc-menu .submenu .list-group{
+    display: none;
+
+}
+#doc-menu .submenu-title {
+    position: relative
+}
+#doc-menu .submenu-title em {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-color: #666;
+}
+#doc-menu .selected em {
+    border-top-color: #222;
+}
+#doc-menu .active {
+    background-color: unset;
+}
+#doc-menu .active>.list-group {
+    display: block;
+}
+#doc-menu .active>.submenu-title em {
+    border-top: 0;
+    border-bottom-color: #222;
+}
+#doc-menu a.selected {
+    color: #222;
+}
+
+#doc-menu li li {
+    padding-left: 24px;
+}
+
+#doc-menu a {
+    display: block;
+    height: 40px;
 }

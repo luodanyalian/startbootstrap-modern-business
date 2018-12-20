@@ -26,7 +26,10 @@ body {
 .mt {
     padding-top: 10vh;
 }
-
+.breadcrumb-item a {
+    color: #222;
+    text-decoration: none;
+}
 .navbar {
     padding: 0;
 }
@@ -68,11 +71,15 @@ body {
     line-height: 40px;
     padding-left: 15px;
     border: 0;
-
+    border-radius: 0
 }
 #doc-menu .submenu .list-group{
     display: none;
 
+}
+#doc-menu .list-group-item a {
+    color: rgba(0, 0, 0, 0.65);
+    text-decoration: none;
 }
 #doc-menu .submenu-title {
     position: relative
@@ -85,10 +92,10 @@ body {
     width: 0;
     height: 0;
     border: 6px solid transparent;
-    border-top-color: #666;
-}
-#doc-menu .selected em {
-    border-top-color: #222;
+    border-top-color: #959595;
+    border-bottom: 0px;
+    transform-origin: 50% 20%;
+    transition: all 150ms ease-in-out;
 }
 #doc-menu .active {
     background-color: unset;
@@ -97,13 +104,20 @@ body {
     display: block;
 }
 #doc-menu .active>.submenu-title em {
-    border-top: 0;
-    border-bottom-color: #222;
+    border-top-color: #222;
+    transform: rotate(180deg);
 }
-#doc-menu a.selected {
-    color: #222;
+#doc-menu .active>.selected em {
+    border-top-color:#222;
+    transform: rotate(-180deg);
 }
-
+#doc-menu li.selected {
+    background-color: #e6f7ff;
+    border-right: 3px solid #1890ff;
+}
+#doc-menu .submenu-title.selected {
+    color: #1890ff;
+}
 #doc-menu li li {
     padding-left: 24px;
 }

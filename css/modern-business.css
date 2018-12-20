@@ -30,6 +30,10 @@ body {
     color: #222;
     text-decoration: none;
 }
+.card-title a{
+    color: #212529;
+    text-decoration: none;
+}
 .navbar {
     padding: 0;
 }
@@ -69,9 +73,12 @@ body {
 #doc-menu li {
     padding: 0;
     line-height: 40px;
-    padding-left: 15px;
+    
     border: 0;
     border-radius: 0
+}
+#doc-menu li a{
+    padding-left: 15px;
 }
 #doc-menu .submenu .list-group{
     display: none;

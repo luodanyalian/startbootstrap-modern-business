@@ -67,7 +67,7 @@ body {
 
 #doc-menu {
     border-radius: .25rem;
-    border: 1px solid rgba(0, 0, 0, .125);
+    border-right: 1px solid rgba(0, 0, 0, .125);
 }
 
 #doc-menu li {
